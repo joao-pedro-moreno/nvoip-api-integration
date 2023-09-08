@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F5F5F5;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#inputs > img {
+  max-width: 300px;
+
+  margin-bottom: 1.5rem;
+}
+
+#inputs > button, #inputs > input {
+  width: 100%;
+}
+
+#inputs > label + input {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-size: 1.25rem;
+}
+
+input {
+  margin-top: 0.5rem;
+
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #233044;
+
+  background-color: transparent;
+
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-bottom: 1px solid #F37435;
+}
+
+button {
+  margin-top: 1rem;
+
+  padding: 0.5rem;
+  background-color: #51C24A;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+
+  font-size: 1rem;
+  font-weight: bold;
+  color: #F5F5F5;
+
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+#checkboxLine {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}

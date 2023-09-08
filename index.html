@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Integração API SMS</title>
+</head>
+
+<body>
+  <div id="inputs">
+    <img src="logo.png" alt="Logo Nvoiop">
+
+    <label for="napikey">Sua napikey: </label>
+    <input type="text" name="napikey" id="napikey">
+    
+    <label for="phoneNumber">Número para receber SMS: </label>
+    <input type="text" name="phoneNumber" id="phoneNumber">
+  
+    <label for="message">Mensagem: </label>
+    <input type="text" name="message" id="message">
+    
+    <div id="checkboxLine">
+      <label for="flashSms">FlashSMS: </label>
+      <input type="checkbox" name="flashSms" id="flashSms" checked>
+    </div>
+    
+    <button onclick="triggerSms()">Enviar SMS</button>
+  </div>
+  
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
